@@ -70,7 +70,7 @@ var stop = async () => {
         .on('close', () => {
             console.log('Screencast saved to ' + _outFile);
         });
-    encoder.setDelay(1000);
+    encoder.setDelay(100);
     encoder.setRepeat(0);
     encoder.setQuality(10);
     encoder.start();
